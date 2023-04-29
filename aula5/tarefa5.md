@@ -3,26 +3,60 @@
 Responda as questões abaixo (exercite os comandos do git correspondentes). Lembre-se de que o “interessante” não é exatamente o conjunto de respostas, mas o processo de obtê-las e a experiência obtida com a execução dos comandos.
 
 
-1. Qual o comando para obter a versão instalada do Git?
+1. Qual o comando para obter a versão instalada do Git? git --version
+
 2. Qual o efeito da execução de cada um dos comandos abaixo?
-  a. git help
-  b. git help checkout
-  c. git help merge
-  d. git init
-  e. git add --all
-  f. git add -u
-  g. git config -l
-  h. git mv a.txt b.txt
-  i. git reset --hard
-  j. git log -27
-3. O fluxo “clássico” de interação com o Git é algo como “alterar um ou mais arquivos”, “acrescentar essas mudanças para serem contemplados no próximo commit” e, finalmente, executar um “commit”. Quais os comandos necessários para realizar os dois últimos “passos” desse fluxo?
-4. Qual o comando deve ser executado para identificar o que foi alterado desde o último “commit”?
-5. Em um dado repositório, arquivos simplesmente copiados para lá, ou seja, _untracked_, podem ser exibidos/identificados com que comando?
-6. Qual o comando para efetuar um _commit_?
-7. Qual o comando que devemos empregar para descartar mudanças ocorridas no arquivo teste.txt, por exemplo?
+
+  a. git help:
+  exibe diversos comandos disponíveis para uso no Git.
+  
+  b. git help checkout:
+  exibe informações sobre a manipulação de branches.
+  
+  c. git help merge:
+  exibe informações sobre a aplicação de merges.
+  
+  d. git init:
+  configuração inicial de um novo repositório.
+  
+  e. git add --all:
+  adicionar arquivos ao repositório.
+  
+  f. git add -u:
+  manipula apenas arquivos que foram modificados ou removidos.
+  
+  g. git config -l:
+  exibe as informações presentes no arquivo "config".
+  
+  h. git mv a.txt b.txt:
+  mover ou renomear um arquivo.
+  
+  i. git reset --hard:
+  reseta a branch atual.
+  
+  j. git log -27:
+  exibe o histórico do repositório.
+  
+3. O fluxo “clássico” de interação com o Git é algo como “alterar um ou mais arquivos”, “acrescentar essas mudanças para serem contemplados no próximo commit” e, finalmente, executar um “commit”. Quais os comandos necessários para realizar os dois últimos “passos” desse fluxo? git stash e git commit
+
+4. Qual o comando deve ser executado para identificar o que foi alterado desde o último “commit”? git status
+
+5. Em um dado repositório, arquivos simplesmente copiados para lá, ou seja, _untracked_, podem ser exibidos/identificados com que comando? git status -u
+
+6. Qual o comando para efetuar um _commit_? git commit
+
+7. Qual o comando que devemos empregar para descartar mudanças ocorridas no arquivo teste.txt, por exemplo? git reset teste.txt
+
 8. O que deve ser feito para que um determinado diretório do seu repositório seja ignorado pelo Git? Faça uma busca por **.gitignore**.
+
+O repositório deve ser incluído ao arquivo .gitgnore.
+
 9. O que acontece se o seu repositório local for acidentalmente removido?
-10. Como clonar um repositório remoto?
+
+Uma solução para recuperar esse repositório seria cloná-lo novamente de algum local ou checar algum backup.
+
+10. Como clonar um repositório remoto? git clone <git_repo_url> <your_custom_directory_name>
+
 11. Em alguns cenários **git log** pode produzir extensos resultados. Se houver interesse em visualizar o histórico de um repositório, onde cada mudança é fornecida exatamente em uma única linha, qual o comando que deve ser empregado?
 12. Em qual arquivo o Git armazena informações de configuração empregadas por usuário?
 13. Qual o comando para criar um repositório local?
