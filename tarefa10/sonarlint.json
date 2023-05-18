@@ -1,0 +1,9 @@
+{
+    "languages": {
+      "javascript": {
+        "analyzerProperties": {
+          "sonar.javascript.file.suffixes": ".js"
+        }
+      }
+    }
+  }  
