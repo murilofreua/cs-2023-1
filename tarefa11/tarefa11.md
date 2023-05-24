@@ -1,6 +1,6 @@
 # Tarefa 011 - Polimorfismo - 22/05/2023
 
-2. Exercício 02:
+Exercício 02:
 
 2.1 Crie uma classe chamada **Produto** que possua os atributos "nomeloja" e "preco", crie os métodos _sets_ e _gets_ para estes atributos. Crie também o atributo "descricao" e seu método chamado _getDescricao()_ que retorna uma _string_ com o simples conteúdo "Produto de informática".
 
